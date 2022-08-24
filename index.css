@@ -1,0 +1,130 @@
+body{
+    border:1px solid red;
+    width:98%;
+    margin: auto;
+    
+}
+#menu{
+   display: flex;
+     /* gap: 15px; */
+    border: 0px solid red;
+    width: 50%;
+    height:40px;
+    font-size: 16px; 
+    text-align: center;
+    padding: 8px 0px;
+    margin-top: 18px;
+ align-items: center;
+ font-family: 'Poppins', sans-serif;
+ justify-content: space-evenly;
+    
+}
+#navbar{
+    border: 0px solid blue;
+    width: 95%;
+    height:85px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position:fixed;
+    top:0%;
+    right: 0%;
+left: 0%;
+    margin-bottom: 50px;
+    background-color: #fafafb;
+    padding:10px;
+    overflow:auto;
+    transition: 0.4s;
+    
+}
+#menu button{
+    height:55px;
+    border-radius: 28px;
+    width: 88px;
+    font-size: 16px;
+    /* padding: 10px; */
+    border:1px solid #5846f6;
+}
+ #menu>div{
+        border:0px solid blue;
+    padding:0px
+    }
+    #menu>div:hover{
+        color:black;
+        font-weight: bold;
+    }
+    #menu>#login:hover{
+        background-color:#5846f6 ;
+        color: white;
+    }
+    #login{
+        background-color:white;
+        color:#5846f6
+    }
+    #mid{
+        display: flex;
+     justify-content:space-between;
+     border: 0px solid blueviolet;
+     width: 80%;
+     margin: auto;
+     margin-top: 110px;
+        }
+#photo{
+width:55%;
+}
+#photo1{
+    width:93%;
+    border:0px solid greenyellow;
+ margin-left: 140px;
+
+  
+}
+#txt{
+    border:0px solid goldenrod;
+    width:40%
+
+}
+#txt>h1{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  border:0px solid grey;
+  margin-left: 25px;
+}
+#txt>p{
+    font-size: 21px;
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    border:0px solid green;
+   width:300px;
+    text-align: left;
+    height:130px;
+    margin-top:40px;
+    margin-left:25px
+}
+#txt>button{
+    height:55px;
+    border-radius: 28px;
+    width: 120px;
+    font-size: 18px;
+   /* padding: 15.4px 19.4px; */
+    border:1px solid #5846f6;
+    margin-left:25px;
+}
+#logos{
+    border: 1px solid lawngreen;
+    display: flex;
+    gap:50px;
+    justify-content: space-evenly;
+    width:95%;
+    margin:auto;
+}
+#mid+h1{
+    text-align: center;
+    margin-top: 100px;
+    font-family:'Poppins', sans-serif;
+    font-weight: lighter;
+}
+#navbar>img{
+    margin-left: 85px;
+}
