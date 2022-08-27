@@ -3,11 +3,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lumen5-Video maker |Create videos online in minutes</title>
+    <title>Lumen5-Video maker | Create videos online in minutes</title>
     <link rel="icon" href="https://storage.googleapis.com/lumen5-site-images/favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
@@ -28,18 +30,33 @@
     div1.innerText="Pricing"
     div1.style.color="#48505E"
     div1.style.cursor="pointer"
+    div1.addEventListener("click",function(event){
+      event.preventDefault()
+      document.location.href="https://lumen5.com/pricing/"
+    })
     let div2=document.createElement("div")
     div2.innerText="Enterprise"
     div2.style.color="#48505E"
     div2.style.cursor="pointer"
+    div2.addEventListener("click",function(event){
+      event.preventDefault()
+      document.location.href="enterprise.html"
+    })
     let div3=document.createElement("div")
     div3.innerText="Case Studies"
     div3.style.color="#48505E"
     div3.style.cursor="pointer"
+    div3.addEventListener("click",function(event){
+      event.preventDefault()
+      document.location.href="case-study.html"
+    })
     let div4=document.createElement("div")
     div4.innerText="Learn"
     div4.style.color="#48505E"
     div4.style.cursor="pointer"
+    div4.addEventListener("click",function(){
+      
+    })
     let btn1=document.createElement("button")
     btn1.setAttribute("id","login")
     btn1.innerText="Login"
@@ -75,7 +92,10 @@ let mid=document.createElement("div")
   let btn=document.createElement("button")
   btn.innerText="Sign up free"
   btn.style.cursor="pointer"
-  
+  btn.addEventListener("click",function(event){
+    event.preventDefault()
+    document.location.href="signup.html"
+  })
   btn.style.width="135px"
   btn.style.background="#5846f6"
     btn.style.color="white"
@@ -113,4 +133,274 @@ let pic9=document.createElement("img")
 pic9.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png")
 div8.append(pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9)
 document.querySelector("body").append(div7,div8)
+
+let div9=document.createElement("div")
+div9.setAttribute("id","title2")
+head2=document.createElement("h2")
+head2.innerText="Captivating video templates"
+para2=document.createElement("p")
+para2.innerText="Drag and drop. No experience required."
+let div10=document.createElement("div")
+div10.setAttribute("id","videos")
+
+let vid1=document.createElement("video")
+vid1.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4")
+vid1.addEventListener("mouseover",function(){
+  this.play()
+})
+vid1.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid2=document.createElement("video")
+vid2.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4")
+vid2.addEventListener("mouseover",function(){
+  this.play()
+})
+vid2.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid3=document.createElement("video")
+vid3.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4")
+vid3.addEventListener("mouseover",function(){
+  this.play()
+})
+vid3.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid4=document.createElement("video")
+vid4.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4")
+vid4.addEventListener("mouseover",function(){
+  this.play()
+})
+vid4.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid5=document.createElement("video")
+vid5.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4")
+vid5.addEventListener("mouseover",function(){
+  this.play()
+})
+vid5.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid6=document.createElement("video")
+vid6.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4")
+vid6.addEventListener("mouseover",function(){
+  this.play()
+})
+vid6.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid7=document.createElement("video")
+vid7.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/flux_prev.mp4")
+vid7.addEventListener("mouseover",function(){
+  this.play()
+})
+vid7.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid8=document.createElement("video")
+vid8.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/unity_prev.mp4")
+vid8.addEventListener("mouseover",function(){
+  this.play()
+})
+vid8.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid9=document.createElement("video")
+vid9.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4")
+vid9.addEventListener("mouseover",function(){
+  this.play()
+})
+vid9.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let head1=document.createElement("h1")
+head1.innerText="Transform blog posts into videos with A.I."
+let para1=document.createElement("p")
+para1.innerText="Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message."
+let div11=document.createElement("div")
+div11.setAttribute("id","photos")
+div=document.createElement("div")
+div.setAttribute("id","content")
+let head3=document.createElement("h3")
+head3.innerText="Get started for free "
+head3.style.color="#5846f6"
+head3.style.fontSize="16px"
+head3.style.cursor="pointer"
+head3.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="signup.html"
+})
+let linebrk=document.createElement("hr")
+let pic10=document.createElement("img")
+pic10.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png")
+div11.append(pic10,div)
+div9.append(head2,para2)
+div.append(head1,para1,head3,linebrk)
+div10.append(vid1,vid2,vid3,vid4,vid5,vid6,vid7,vid8,vid9)
+document.querySelector("body").append(div9,div10,div11)
+
+</script>
+<html>
+  <div id="colorful-box">
+    <h3>Join 800,000+ companies that are using Lumen5 to tell their stories.</h3>
+    <h5>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</h5>
+   <button>Request a demo</button>
+   </div>
+  <footer>
+    <div id="footer">
+      <div id="inside1">
+        <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" alt="">
+        <h3>
+          Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.
+        </h3>
+      </div>
+      <div  class="inside">
+        <h5>EXPLORE</h5>
+       
+        <p id="abt">About</p>
+        <p id="feat">Features</p>
+        <p id="care">Careers</p>
+        <p id="link">Linkedin</p>
+        <p id="sup">Support</p>
+        <p id="prou">Product updates</p>
+     
+    </div>
+    <div  class="inside">
+      <h5>VIDEO TOOLS</h5>
+      
+        <p id="adt">Add Text to Video</p>
+        <p id="cuv">Cut Video</p>
+        <p id="merv">Merge Video</p>
+        <p id="compv">Compress Video</p>
+        <p id="res">Resize</p>
+        <p id="sall">See all</p>
+     
+    </div>
+    <div class="inside">
+      <h5>VIDEO CREATORS</h5>
+      
+        <p id="ved">Video Editor</p>
+        <p id="pdm">Photo Video Maker</p>
+        <p id="fvm">Facebook Video Maker</p>
+        <p id="yim">YouTube Intro Maker</p>
+        <p id="ivm">Instragram Video Maker</p>
+        <p id="sel">See all</p>
+      
+    </div>
+    </div>
+  </footer>
+</html>
+<script>
+  let btn6=document.querySelector("#colorful-box>button")
+btn6.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/enterprise-demo/"
+})
+let a=document.querySelector("#abt")
+a.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/about/"
+})
+let fe=document.querySelector("#feat")
+fe.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/features/"
+})
+let ce=document.querySelector("#care")
+ce.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/careers/"
+
+})
+let li=document.querySelector("#link")
+li.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://ca.linkedin.com/company/lumen5"
+
+})
+let su=document.querySelector("#sup")
+su.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://help.lumen5.com/en/"
+
+})
+let pr=document.querySelector("#prou")
+pr.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://updates.lumen5.com/"
+
+})
+let ad=document.querySelector("#adt")
+ad.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/add-text-to-video"
+
+})
+let mr=document.querySelector("#merv")
+mr.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/merge-video"
+
+})
+let co=document.querySelector("#compv")
+co.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/compress-video/"
+
+})
+let rv=document.querySelector("#res")
+rv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/resize-video/"
+
+})
+let sa=document.querySelector("#sall")
+sa.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/"
+
+})
+let ve=document.querySelector("#ved")
+ve.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/video-editor/"
+
+})
+let pd=document.querySelector("#pdm")
+pd.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/photo-video-maker/"
+
+})
+let me=document.querySelector("#fvm")
+me.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/facebook-video-maker/"
+
+})
+let im=document.querySelector("#yim")
+im.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/youtube-intro-maker/"
+
+})
+let iv=document.querySelector("#ivm")
+iv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/instagram-video-maker/"
+
+})
+let sl=document.querySelector("#sel")
+sl.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/video-maker/"
+
+})
+let uv=document.querySelector("#cuv")
+uv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/cut-video"
+})
 </script>

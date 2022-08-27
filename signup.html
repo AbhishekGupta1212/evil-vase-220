@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <head>
 
-    <title>Sign up|Lumen5</title>
+    <title>Sign up | Lumen5</title>
     <link rel="icon" href="https://storage.googleapis.com/lumen5-site-images/favicon/favicon.ico">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
     <style>
         body{
             width:100%;
@@ -12,44 +16,241 @@
             top: 0%;
             right:0%;
             left: 0%;
+          
+            
         }
 #left{
-width:35%;
-border:1px solid #5e44e2;
-height:800px;
-position: fixed;
+width:28%;
+border:0px solid #5e44e2;
+height:750px;
+position:fixed;
 left: 0%;
-background-color: transparent;
-padding-left: 20px;
-background-image: url("https://www.istockphoto.com/photo/business-people-meeting-good-teamwork-in-office-teamwork-successful-meeting-gm1032822478-276632032");
+background-color:#5e44e2 ;
+padding:0px 0px 50px 50px;
+
+
 }
 #right{
-width:60%;
-border:1px solid rebeccapurple;
-
-height:800px;
-margin-left: 500px;
+width:75%;
+border:0px solid rebeccapurple;
+height:auto;
+margin-left: 520px;
+text-align: left;
+/* margin: auto; */
 
 }
 #left>img{
-    width:30%
+    width:40%;
+    border:0px solid red;
+    margin-top:11.8px;
+}
+#logo{
+    display: grid;
+    grid-template-columns: repeat(2,0.8fr);
+    grid-template-rows: repeat(3,0.8fr);
+    border:0px solid white;
+    row-gap:0.2px;
+    column-gap: 50px;
+   
+}
+#logo>img{
+    width:50%;
+  
+}
+#left>p{
+    border:0px solid white;
+    font-size:50px;
+    color: #f6f5fe;
+    width:60%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    font-weight: bolder;
+    line-height: 60px;
+   
+}
+#left>h2{
+    font-size: 28px;
+    border: 0px solid white;
+    width:95%;
+    color: #f6f5fe;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: lighter;
+    margin-top: -20px;
+}
+form>h2{
+    font-size: 37px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;
+    margin-top: -2px;
+}
+#right input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 80%;
+    gap: 50px;
+    height:50px;
+    font-size: 18px;
+}
+#right label{
+font-size: 16px;
+line-height: 40px;
+text-transform: uppercase;
+font-family: 'Poppins', sans-serif; 
+
+}
+ul{
+    border:0px solid black;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width:70%;
+    column-gap: 100px;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif; 
+font-size: 14px;
+margin-top: 25px;
+margin-left: -25px;
+}
+button{
+    width:80%;
+    background-color: #5e44e2;
+    border: 1px solid #5e44e2;
+    color: white;
+    border-radius: 30px;
+    height:50px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; 
+}
+#fb{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #4a68ad;
+    border: 3px solid #4a68ad;
+
+}
+hr{
+    width:80%;
+margin-right: 170px;
+margin-top: 30px;
+}
+#fb+p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+#fb+p+p{
+    font:12px 'Poppins', sans-serif;
+}
+#logo1{
+    cursor: pointer;
+}
+#signup{
+    cursor: pointer;
+}
+#line{
+    position: relative;
+    height:1px;
+    margin: 26px;
+    background-color: #d4d4d4;
+    width:75%;
+    
+}
+#line::before{
+    content: "OR";
+    position: absolute;
+    top:50%;
+    right:40%;
+    transform: translate(-50%,-50%);
+    background-color: #FFF;
+    color: #8992a3;
+    padding:0 15px;
+    font:16px 'Poppins', sans-serif;
 }
     </style>
 </head>
 <body>
     <div id="left">
-<img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="logo">
-<h1>Supercharge your content strategy</h1>
+<img id="logo1" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="logo">
+<p>Supercharge your content strategy</p>
 <h2>
     Join 800,000+ brands creating
     <br>
     videos with Lumen5</h2>
+    <div id="logo">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png" alt="">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" alt="">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png" alt="">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" alt="">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" alt="">
+    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png" alt="">
+    </div>
    </div>
+   
+
     <div id="right">
+        <form>
 <h2>Get started with a free account</h2>
+
+    <div><label>FULL NAME</label>
+        <br>
+    <input type="text" id="name"></div>
+    <div>
+        <label>WORK EMAIL</label>
+ <br>
+<input type="email" id="email" >
+</div>
+    <div>
+        <label>PASSWORD</label>
+<br>
+<input type="password" id="pwrd">
+</div>
+    
+    <ul>
+        <li>One lowercase character</li>
+        <li>8 characters minimum</li>
+        <li> One uppercase character</li>
+        <li>Contains a number or symbol</li>
+    </ul>
+    <button id="signup">
+        Create account
+    </button>
+    <div id="line"></div>
+    <button id="fb">
+        <i class="fa-brands fa-square-facebook"></i>
+        Sign up with Facebook
+    </button>
+    <p>Alerady have a Lumen5 account? <a href="login.html">Login</a></p>
+    <p>By clicking “Create account” I agree to Lumen5’s  <u>Terms of Use</u>  and <u>Privacy Policy</u>  
+        </p>
+    </form>
     </div>
 </body>
 </html>
 <script>
+    document.querySelector("#logo1").addEventListener("click",function(event){
+        event.preventDefault()
+        document.location.href="index.html"
+    })
+    document.querySelector("#fb").addEventListener("click",function(event){
+        event.preventDefault()
+        document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1796597403992590&kid_directed_site=0&app_id=1796597403992590&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.3%2Fdialog%2Foauth%3Fclient_id%3D1796597403992590%26redirect_uri%3Dhttps%253A%252F%252Flumen5.com%252Fcomplete%252Ffacebook%252F%26state%3Dao7lLvcG3ZsQ8xjJ5WjGOM6sCys9ZDxF%26return_scopes%3Dtrue%26scope%3Demail%252Cpages_manage_metadata%252Cpages_manage_posts%252Cread_insights%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Df7141867-578f-459a-bfd9-8d5ec7f4974b%26tp%3Dunspecified&cancel_url=https%3A%2F%2Flumen5.com%2Fcomplete%2Ffacebook%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dao7lLvcG3ZsQ8xjJ5WjGOM6sCys9ZDxF%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
+    })
+    
+    let dataArr=JSON.parse(localStorage.getItem("info"))||[]
+    document.querySelector("form").addEventListener("submit", mydata);
+   function mydata(event) {
+    event.preventDefault()
+   let Name = document.querySelector("#name").value;
+let e_mail = document.querySelector("#email").value;
+let password = document.querySelector("#pwrd").value;
+   let dataobj={
+        Name,
+        e_mail,
+        password
+    }
+dataArr.push(dataobj)
+localStorage.setItem("info",JSON.stringify(dataArr))
+  }
 
 </script>
