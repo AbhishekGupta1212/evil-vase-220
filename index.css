@@ -1,5 +1,5 @@
 body{
-    border:1px solid red;
+    border:0px solid red;
     width:98%;
     margin: auto;
     
@@ -112,7 +112,7 @@ width:55%;
     margin-left:25px;
 }
 #logos{
-    border: 1px solid lawngreen;
+    border: 0px solid lawngreen;
     display: flex;
     gap:50px;
     justify-content: space-evenly;
@@ -132,7 +132,7 @@ width:55%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    border: 1px solid red;
+    border: 0px solid red;
     gap: 10px;
     height: 750px;
     text-align: center;
@@ -156,3 +156,99 @@ width:55%;
     font-weight: 700;
     line-height: 1.35;
 }
+#photos{
+    display: flex;
+    padding-bottom: 40px;
+}
+#content>h1{
+font-size: 40px;
+width:70%
+}
+#content>p{
+    font-size: 22px;
+    width:80%
+}
+#content{
+    margin-left: 70px;
+}
+#photos>img{
+    padding-top: 125px;
+    width:40%;
+    padding-left: 60px;
+}
+#footer{
+    display: flex;
+    background-color: #24282f;
+    color: white; 
+    align-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    
+  }
+  .inside{
+  margin: 0px 48px 0px 0px;
+  padding:0px 48px 0px 0px;
+  justify-content: space-between;
+  border: 0px solid white;
+  width:40%;
+  margin:auto
+  }
+ 
+  #inside1>img{
+    width:30%;
+    border:0px solid red;
+    margin-left:130px
+   
+  }
+  #inside1>h3{
+    border:0px solid white;
+    width:50%;
+    margin-left: 130px;
+    padding-top: 15px;
+     
+  }
+  .inside>h5{
+font-size: 14px;
+border:0px solid whitesmoke;
+width:100% 
+  }
+  .inside>p{
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #colorful-box{
+    height:380px;
+    border:0px solid red;
+    width:88%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    background-color: #5846f6;
+    color: white;
+  }
+  #colorful-box>h3{
+    font-size:37px ;
+    width:60%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #colorful-box>h5{
+    font-size: 21px;
+    width:55%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  #colorful-box>button{
+    height:55px;
+    border-radius: 28px;
+    width: 180px;
+    font-size: 16px;
+  cursor: pointer;
+    border:1px solid #5846f6;
+    background-color: white;
+    color: #5846f6;
+  }

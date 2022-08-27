@@ -94,9 +94,12 @@
     color: white;
     border: 1px solid white;
   }
+  #navbar>img{
+    cursor: pointer;
+  }
   #mid{
     background-color: #24282f;
-    border:1px solid red;
+    border:0px solid red;
     margin-top: 110px;
     display: flex;
     justify-content: space-evenly;
@@ -104,7 +107,7 @@
   }
   #mid>#left{
     color: white;
-border:1px solid lightcoral;
+border:0px solid lightcoral;
 padding-left: 130px;
 width: 40%;
   }
@@ -112,14 +115,14 @@ width: 40%;
     font-size: 1.50rem;
   }
   #left>h3{
-    border: 1px solid lightcyan;
+    border: 0px solid lightcyan;
     width:80% ;
     font-size: 37px;
     margin-top: -30px;
     line-height: 1.33;
   }
   #left>h5{
-    border:1px solid lightgreen;
+    border:0px solid lightgreen;
     width:58%;
     font-size: 18px;
   }
@@ -153,13 +156,14 @@ padding-top: 70px;
     height: 600px;
     text-align: center;
     padding: 30px;
-    border: 1px solid black;
+    border: 0px solid black;
   }
   #videos>video{
     width:80%;
     gap: -10px;
     border-radius: 20px;
     margin: auto;
+    cursor: pointer;
   }
   #clogos+h1{
     text-align: center;
@@ -198,8 +202,9 @@ font-size: 25px;
   }
   #box{
     display: flex;
-  border: 1px solid red;
+  border: 0px solid red;
   gap: 100px;
+  margin-bottom: 50px;
 
   }
   #box img{
@@ -211,6 +216,7 @@ font-size: 25px;
   }
   #conte{
     margin-left: 50px;
+  
 
   }
   #conte h2{
@@ -223,6 +229,118 @@ width: 90%;
 
 width: 94.3%
   }
+  #maintain{
+    display: flex;
+    background-color: #24282f;
+   padding-top: 80px;
+   color: white;
+   padding-bottom: 80px;
+
+  }
+  #maintain h2{
+    border:0px solid red;
+    font-size: 38px;
+    width:80%;
+    padding-left: 100px;
+  }
+  #maintain p{
+    font-size: 16px;
+    width: 64%;
+    border:0px solid saddlebrown;
+    padding-left: 100px;
+  }
+  #cont{
+    width:60%
+  }
+  #pic{
+width:50%;
+border:0px solid white;
+margin-left: -150px;
+  }
+  #pic img{
+    width:90%;
+    margin-top:50px;
+  }
+  #footer{
+    display: flex;
+    background-color: #24282f;
+    color: white; 
+    align-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+  }
+  .inside{
+  margin: 0px 48px 0px 0px;
+  padding:0px 48px 0px 0px;
+  justify-content: space-between;
+  border: 0px solid white;
+  width:40%;
+  margin:auto
+  }
+ 
+  #inside1>img{
+    width:30%;
+    border:0px solid red;
+    margin-left:130px
+   
+  }
+  #inside1>h3{
+    border:0px solid white;
+    width:50%;
+    margin-left: 130px;
+    padding-top: 15px;
+     
+  }
+  .inside>h5{
+font-size: 14px;
+border:0px solid whitesmoke;
+width:100% 
+  }
+  .inside>p{
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #colorful-box{
+    height:380px;
+    border:0px solid red;
+    width:88%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    background-color: #5846f6;
+    color: white;
+  }
+  #colorful-box>h3{
+    font-size:37px ;
+    width:60%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #colorful-box>h5{
+    font-size: 21px;
+    width:55%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  #colorful-box>button{
+    height:55px;
+    border-radius: 28px;
+    width: 180px;
+    font-size: 16px;
+  cursor: pointer;
+    border:1px solid #5846f6;
+    background-color: white;
+    color: #5846f6;
+  }
+  #navbar-right>div:hover{
+    cursor: pointer;
+    color: grey;
+  }
 
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 580px) {
@@ -234,7 +352,7 @@ width: 94.3%
     display: block;
     text-align: left;
   }
-  #navbar-right {
+  #navbar-right{
     float: none;
   }
 }
@@ -244,9 +362,9 @@ width: 94.3%
     <div id="navbar">
         <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png"  id="logo" alt="log">
         <div id="navbar-right">
-          <div>Pricing</div>
-          <div>Enterprise</div>
-          <div>Case Studies</div>
+          <div id="price">Pricing</div>
+          <div id="enter">Enterprise</div>
+          <div id="case">Case Studies</div>
           <div>Learn</div>
           
           <button id="login">Login</button>
@@ -327,7 +445,68 @@ width: 94.3%
     </div>
 </div>
 
-      
+      <div id="maintain">
+        <div id="cont">
+
+          <h2>Maintain full control over content and branding.</h2>
+          <p>
+            Our team of motion graphics designers work with your brand team to produce a custom template unique to your visual identity, ensuring your videos are always on-brand no matter who is creating them for you.
+<br>
+<br>
+            With approval and permission level workflows in place, you can always make sure everyone's on the right path and on brand. Comment and leave revision requests right in the video itself, scene by scene, allowing for smooth team collaboration and a simple creation and video sharing process between team members, no matter if they're sitting next to you, or half a world away.
+          </p>
+        </div>
+        <div id="pic">
+          <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/enterprise-control.png" alt="">
+        </div>
+
+      </div>
+      <div id="colorful-box">
+       <h3>Join 800,000+ companies that are using Lumen5 to tell their stories.</h3>
+       <h5>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</h5>
+      <button>Request a demo</button>
+      </div>
+      <div id="footer">
+        <div id="inside1">
+          <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" alt="">
+          <h3>
+            Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.
+          </h3>
+        </div>
+        <div  class="inside">
+          <h5>EXPLORE</h5>
+         
+          <p id="abt">About</p>
+          <p id="feat">Features</p>
+          <p id="care">Careers</p>
+          <p id="link">Linkedin</p>
+          <p id="sup">Support</p>
+          <p id="prou">Product updates</p>
+       
+      </div>
+      <div  class="inside">
+        <h5>VIDEO TOOLS</h5>
+        
+          <p id="adt">Add Text to Video</p>
+          <p id="cuv">Cut Video</p>
+          <p id="merv">Merge Video</p>
+          <p id="compv">Compress Video</p>
+          <p id="res">Resize</p>
+          <p id="sall">See all</p>
+       
+      </div>
+      <div class="inside">
+        <h5>VIDEO CREATORS</h5>
+        
+          <p id="ved">Video Editor</p>
+          <p id="pdm">Photo Video Maker</p>
+          <p id="fvm">Facebook Video Maker</p>
+          <p id="yim">YouTube Intro Maker</p>
+          <p id="ivm">Instragram Video Maker</p>
+          <p id="sel">See all</p>
+        
+      </div>
+      </div>
 </body>
 </html>
 <script>
@@ -336,10 +515,10 @@ width: 94.3%
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("logo").style.fontSize = "15px";
   } else {
     document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("logo").style.fontSize = "15px";
   }
 }
 let btn=document.querySelector("#left>button")
@@ -356,5 +535,135 @@ let btn4=document.querySelector("#login+button")
 btn4.addEventListener("click",function(event){
   event.preventDefault()
   document.location.href="signup.html"
+})
+let logo1=document.querySelector("#navbar>img")
+logo1.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="index.html"
+})
+let btn5=document.querySelector("#colorful-box>button")
+btn5.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/enterprise-demo/"
+})
+let c=document.querySelector("#price")
+c.addEventListener("click",function(event){
+  event.preventDefault()
+document.location.href="https://lumen5.com/pricing/"
+})
+let e=document.querySelector("#enter")
+e.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="enterprise.html"
+})
+let x=document.querySelector("#case")
+x.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="case-study.html"
+})
+let a=document.querySelector("#abt")
+a.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/about/"
+})
+let fe=document.querySelector("#feat")
+fe.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/features/"
+})
+let ce=document.querySelector("#care")
+ce.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/careers/"
+
+})
+let li=document.querySelector("#link")
+li.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://ca.linkedin.com/company/lumen5"
+
+})
+let su=document.querySelector("#sup")
+su.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://help.lumen5.com/en/"
+
+})
+let pr=document.querySelector("#prou")
+pr.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://updates.lumen5.com/"
+
+})
+let ad=document.querySelector("#adt")
+ad.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/add-text-to-video"
+
+})
+let mr=document.querySelector("#merv")
+mr.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/merge-video"
+
+})
+let co=document.querySelector("#compv")
+co.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/compress-video/"
+
+})
+let rv=document.querySelector("#res")
+rv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/resize-video/"
+
+})
+let sa=document.querySelector("#sall")
+sa.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/"
+
+})
+let ve=document.querySelector("#ved")
+ve.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/video-editor/"
+
+})
+let pd=document.querySelector("#pdm")
+pd.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/photo-video-maker/"
+
+})
+let me=document.querySelector("#fvm")
+me.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/facebook-video-maker/"
+
+})
+let im=document.querySelector("#yim")
+im.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/youtube-intro-maker/"
+
+})
+let iv=document.querySelector("#ivm")
+iv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/instagram-video-maker/"
+
+})
+let sl=document.querySelector("#sel")
+sl.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/video-maker/"
+
+})
+let uv=document.querySelector("#cuv")
+uv.addEventListener("click",function(event){
+  event.preventDefault()
+  document.location.href="https://lumen5.com/tools/cut-video"
 })
 </script>
