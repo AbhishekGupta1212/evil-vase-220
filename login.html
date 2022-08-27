@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<html>
 <head>
-
-    <title>Sign up | Lumen5</title>
+    <title>Login | Lumen5</title>
     <link rel="icon" href="https://storage.googleapis.com/lumen5-site-images/favicon/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body{
             width:100%;
@@ -98,19 +98,6 @@ text-transform: uppercase;
 font-family: 'Poppins', sans-serif; 
 
 }
-ul{
-    border:0px solid black;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    width:70%;
-    column-gap: 100px;
-    justify-content: space-evenly;
-    font-family: 'Poppins', sans-serif; 
-font-size: 14px;
-margin-top: 25px;
-margin-left: -25px;
-}
 button{
     width:80%;
     background-color: #5e44e2;
@@ -145,8 +132,43 @@ margin-top: 30px;
 #logo1{
     cursor: pointer;
 }
-#signup{
+#login{
     cursor: pointer;
+}
+#key{
+    /* margin-top: 20px; */
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #537fe4;
+    border: 1px solid #4a68ad;
+    }
+.grey-color{
+    color:lightslategrey;
+gap:20px;
+width: 40px;
+}
+#pwrd+p{
+text-align:right;
+margin-right:150px;
+color:#b1bacb;
+font:14px 'Poppins', sans-serif;
+
+}
+#copy{
+    font: 14px 'Poppins', sans-serif ;
+text-align: center;
+color:#8891a2;
+margin-right: 130px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+#key+p{
+    font: 14px 'Poppins', sans-serif ; 
+    font-weight: -500px; 
+}
+#key+p+a{
+    color:#5846f6;
+    font-weight:900;
 }
     </style>
 </head>
@@ -171,11 +193,8 @@ margin-top: 30px;
 
     <div id="right">
         <form>
-<h2>Get started with a free account</h2>
+<h2>Welcome back!</h2>
 
-    <div><label>FULL NAME</label>
-        <br>
-    <input type="text" id="name"></div>
     <div>
         <label>WORK EMAIL</label>
  <br>
@@ -185,31 +204,39 @@ margin-top: 30px;
         <label>PASSWORD</label>
 <br>
 <input type="password" id="pwrd">
+<p>Forgot password?</p>
 </div>
     
-    <ul>
+    <!-- <ul>
         <li>One lowercase character</li>
         <li>8 characters minimum</li>
         <li> One uppercase character</li>
         <li>Contains a number or symbol</li>
-    </ul>
-    <button id="signup">
-        Create account
+    </ul> -->
+    <button id="login">
+       Login
     </button>
     <hr>
     <button id="fb">
         <i class="fa-brands fa-square-facebook"></i>
-        Sign up with Facebook
+       Login with Facebook
     </button>
-    <p>Alerady have a Lumen5 account? <a href="login.html">Login</a></p>
-    <p>By clicking “Create account” I agree to Lumen5’s  <u>Terms of Use</u>  and <u>Privacy Policy</u>  
-        </p>
+    <button id="key">
+         <span class="material-icons grey-color">key</span>
+        Login via SSO 
+    </button>
+    <p>Need a Lumen5 account?
+         <a href="signup.html">Create an account</a></p>
+    <p id="copy">
+        &copy; 2022 Lumen5
+       
+       </p>
     </form>
     </div>
 </body>
 </html>
 <script>
-    document.querySelector("#logo1").addEventListener("click",function(event){
+   document.querySelector("#logo1").addEventListener("click",function(event){
         event.preventDefault()
         document.location.href="index.html"
     })
@@ -218,26 +245,27 @@ margin-top: 30px;
         document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1796597403992590&kid_directed_site=0&app_id=1796597403992590&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.3%2Fdialog%2Foauth%3Fclient_id%3D1796597403992590%26redirect_uri%3Dhttps%253A%252F%252Flumen5.com%252Fcomplete%252Ffacebook%252F%26state%3Dao7lLvcG3ZsQ8xjJ5WjGOM6sCys9ZDxF%26return_scopes%3Dtrue%26scope%3Demail%252Cpages_manage_metadata%252Cpages_manage_posts%252Cread_insights%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Df7141867-578f-459a-bfd9-8d5ec7f4974b%26tp%3Dunspecified&cancel_url=https%3A%2F%2Flumen5.com%2Fcomplete%2Ffacebook%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dao7lLvcG3ZsQ8xjJ5WjGOM6sCys9ZDxF%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
     })
     document.querySelector("#right>form").addEventListener("submit", mydata);
-    let dataArr=JSON.parse(localStorage.getItem("info"))||[]
+    let data1Arr=JSON.parse(localStorage.getItem("info"))||[]
   function mydata(event) {
     event.preventDefault()
-   let Name = document.querySelector("#name").value;
-    localStorage.getItem("Name",Name);
-    localStorage.setItem("Name",Name);
      let e_mail = document.querySelector("#email").value;
-    localStorage.getItem("e_mail", e_mail);
+    // localStorage.getItem("e_mail", e_mail);
     localStorage.setItem("e_mail",e_mail);
     let password = document.querySelector("#pwrd").value;
-    localStorage.getItem("password", password);
+    // localStorage.getItem("password", password);
     localStorage.setItem("password", password)
     
-    let dataobj={
-        Name,
+    let data1obj={
         e_mail,
         password
     }
-dataArr.push(dataobj)
-localStorage.setItem("info",JSON.stringify(dataobj))
+data1Arr.push(data1obj)
+localStorage.setItem("info",JSON.stringify(data1obj))
+if(dataobj.e_mail===data1obj.e_mail && dataobj.password===data1obj.password){
+    alert("Login Successful")
+}else{
+    alert("Check email or password")
+}
   }
 
 </script>

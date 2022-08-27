@@ -34,6 +34,10 @@
     div2.innerText="Enterprise"
     div2.style.color="#48505E"
     div2.style.cursor="pointer"
+    div2.addEventListener("click",function(event){
+      event.preventDefault()
+      document.location.href="enterprise.html"
+    })
     let div3=document.createElement("div")
     div3.innerText="Case Studies"
     div3.style.color="#48505E"
@@ -120,18 +124,96 @@ div8.append(pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9)
 document.querySelector("body").append(div7,div8)
 
 let div9=document.createElement("div")
-// div9.setAttribute("id","videos")
-// let vid1=document.createElement("video")
-// vid1.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4")
+div9.setAttribute("id","title2")
+head2=document.createElement("h2")
+head2.innerText="Captivating video templates"
+para2=document.createElement("p")
+para2.innerText="Drag and drop. No experience required."
+let div10=document.createElement("div")
+div10.setAttribute("id","videos")
+
+let vid1=document.createElement("video")
+vid1.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4")
+vid1.addEventListener("mouseover",function(){
+  this.play()
+})
+vid1.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid2=document.createElement("video")
+vid2.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4")
+vid2.addEventListener("mouseover",function(){
+  this.play()
+})
+vid2.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid3=document.createElement("video")
+vid3.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4")
+vid3.addEventListener("mouseover",function(){
+  this.play()
+})
+vid3.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid4=document.createElement("video")
+vid4.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4")
+vid4.addEventListener("mouseover",function(){
+  this.play()
+})
+vid4.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid5=document.createElement("video")
+vid5.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4")
+vid5.addEventListener("mouseover",function(){
+  this.play()
+})
+vid5.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid6=document.createElement("video")
+vid6.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4")
+vid6.addEventListener("mouseover",function(){
+  this.play()
+})
+vid6.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid7=document.createElement("video")
+vid7.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/flux_prev.mp4")
+vid7.addEventListener("mouseover",function(){
+  this.play()
+})
+vid7.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid8=document.createElement("video")
+vid8.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/unity_prev.mp4")
+vid8.addEventListener("mouseover",function(){
+  this.play()
+})
+vid8.addEventListener("mouseleave",function(){
+  this.pause()
+})
+let vid9=document.createElement("video")
+vid9.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4")
+vid9.addEventListener("mouseover",function(){
+  this.play()
+})
+vid9.addEventListener("mouseleave",function(){
+  this.pause()
+})
 let head1=document.createElement("h1")
 head1.innerText="Transform blog posts into videos with A.I."
 let para1=document.createElement("p")
 para1.innerText="Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message."
-let div10=document.createElement("div")
-div10.setAttribute("id","photos")
+let div11=document.createElement("div")
+div11.setAttribute("id","photos")
 let pic10=document.createElement("img")
 pic10.setAttribute("src","https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png")
-div10.append(pic10)
-div9.append(head1,para1,div10,vid1)
-document.querySelector("body").append(div9)
+div11.append(head1,para1,pic10)
+div9.append(head2,para2)
+div10.append(vid1,vid2,vid3,vid4,vid5,vid6,vid7,vid8,vid9)
+document.querySelector("body").append(div9,div10,div11)
 </script>

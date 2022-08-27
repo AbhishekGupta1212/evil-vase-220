@@ -128,3 +128,31 @@ width:55%;
 #navbar>img{
     margin-left: 85px;
 }
+#videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 1px solid red;
+    gap: 10px;
+    height: 750px;
+    text-align: center;
+    padding: 50px;
+}
+#videos>video{
+    width:90%;
+    border-radius: 20px;
+} 
+#title2{
+    text-align: center;
+ font-family:'Poppins', sans-serif; 
+}
+#title2 p{
+    font-size: 1.325rem;
+    font-weight: 400;
+    line-height: 1.33;
+}
+#title2 h2{
+    font-size: 2.3125rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
